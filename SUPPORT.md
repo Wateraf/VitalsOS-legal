@@ -20,6 +20,9 @@ When subscriptions are available, use **Restore Purchases** in the app. Billing 
 **Notifications**  
 Enable in **Manage → Reminders**, then allow notifications in iOS Settings → VitalsOS.
 
+**How does the game work?**  
+See [How to Play](./HOW_TO_PLAY.md).
+
 ## Privacy
 
 [Privacy Policy](./PRIVACY.md)
