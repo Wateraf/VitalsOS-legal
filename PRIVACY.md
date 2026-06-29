@@ -16,7 +16,7 @@ VitalsOS ("the app") is a personal habit and mission tracker with gamification. 
 
 ## Minimum age
 
-VitalsOS is rated **16+** on the App Store. The app is **not directed at children under 16**. We do not knowingly collect personal information from anyone under 16. If you believe a child under 16 has provided data through the app, contact us (see [SUPPORT.md](./SUPPORT.md)) and we will work with Apple to address it.
+VitalsOS is rated **13+** on the App Store. The app is **not directed at children under 13**. We do not knowingly collect personal information from anyone under 13. If you believe a child under 13 has provided data through the app, contact us (see [SUPPORT.md](./SUPPORT.md)) and we will work with Apple to address it.
 
 ## Data the app handles
 
