@@ -12,10 +12,10 @@ Need help with the VitalsOS iOS app?
 ## Common topics
 
 **Lost data / new phone**  
-VitalsOS v1 stores data on your device only. To move to a new iPhone, restore from an **iCloud or computer backup** when setting up the device. Two phones signed into the same Apple ID do not stay in sync automatically in v1.
+Sign in with **Sign in with Apple** and turn on **iCloud** on each device to sync progress automatically. Without iCloud, data stays on that device only — use an **iCloud or computer backup** when moving to a new iPhone.
 
-**Restore purchases (subscriptions)**  
-When subscriptions are available, use **Restore Purchases** in the app. Billing is handled by Apple.
+**Restore purchases (VitalsOS Pro)**  
+Use **Restore Purchases** on the paywall footer or **Manage → Subscription**. Billing is handled by Apple. Manage or cancel in **Settings → Apple ID → Subscriptions**.
 
 **Notifications**  
 Enable in **Manage → Reminders**, then allow notifications in iOS Settings → VitalsOS.
