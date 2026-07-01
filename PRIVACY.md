@@ -1,6 +1,6 @@
 # VitalsOS Privacy Policy
 
-*Last updated: June 26, 2026*
+*Last updated: July 1, 2026*
 
 VitalsOS ("the app") is a personal habit and mission tracker with gamification. This policy describes what data the app handles and how it is used.
 
