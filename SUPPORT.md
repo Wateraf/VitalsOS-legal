@@ -12,7 +12,9 @@ Need help with the VitalsOS iOS app?
 ## Common topics
 
 **Lost data / new phone**  
-Sign in with **Sign in with Apple** and turn on **iCloud** on each device to sync progress automatically. Without iCloud, data stays on that device only — use an **iCloud or computer backup** when moving to a new iPhone.
+Progress is saved **on your iPhone**. Before reinstalling or switching devices, use **Manage → Data & Backup → Export backup** and keep the `.vitalsbackup` file safe. On the new phone, install VitalsOS, subscribe or restore your subscription, then **Import backup**.
+
+Without a backup export, deleting the app removes your saved progress. An **iCloud or computer device backup** of your iPhone may also preserve app data, but the in-app export is the reliable way to move progress.
 
 **Restore purchases (VitalsOS Pro)**  
 Use **Restore Purchases** on the paywall footer or **Manage → Subscription**. Billing is handled by Apple. Manage or cancel in **Settings → Apple ID → Subscriptions**.

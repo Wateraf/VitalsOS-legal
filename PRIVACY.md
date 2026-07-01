@@ -1,6 +1,6 @@
 # VitalsOS Privacy Policy
 
-*Last updated: June 29, 2026*
+*Last updated: June 26, 2026*
 
 VitalsOS ("the app") is a personal habit and mission tracker with gamification. This policy describes what data the app handles and how it is used.
 
@@ -10,7 +10,9 @@ VitalsOS ("the app") is a personal habit and mission tracker with gamification. 
 
 - **We do not sell your data** or use it for advertising.
 - **We do not use third-party analytics or advertising trackers.**
-- **Habit and game progress** is stored on your device. If you choose **Sign in with Apple** and **iCloud**, progress can sync to your **private** iCloud database (CloudKit) — we do not run our own habit-data servers.
+- **Habit and game progress** is stored **on your iPhone only** using SwiftData. We do not run habit-data servers.
+- **Backup:** You can export an encrypted backup file from **Manage → Data & Backup** and import it on another device. We do not receive that file.
+- **No account required.** There is no Sign in with Apple in the current version.
 - **VitalsOS Pro** subscriptions are billed by **Apple**; we use **RevenueCat** only to check whether your subscription or trial is active.
 - **Not medical advice.** In-app "vitals" and traits are fictional game stats, not health or medical data from HealthKit or clinical sources.
 
@@ -24,17 +26,16 @@ This section matches our [App Store privacy label](https://apps.apple.com). We c
 
 | Data type | Examples | When | Linked to you? |
 |-----------|----------|------|----------------|
-| **Name** | Display name you enter in onboarding; optional name from Sign in with Apple (first sign-in only) | Always on device; synced if iCloud is on | Yes, when you sign in |
-| **Photos** | Profile avatar you pick; share images you save to Photos | Only if you use those features | Yes, when synced via iCloud |
-| **Other user content** | Mission and habit logs, XP, levels, traits, game vitals, stats, titles, reminders settings, quit-challenge progress | Always on device; synced if iCloud is on | Yes, when you sign in |
-| **User ID** | Sign in with Apple user identifier (stored to link your account and purchases) | Only if you sign in with Apple | Yes |
+| **Name** | Display name you enter in onboarding | Stored on your device | Yes (your profile) |
+| **Photos** | Profile avatar you pick; share images you save to Photos | Only if you use those features | Yes (your profile) |
+| **Other user content** | Mission and habit logs, XP, levels, traits, game vitals, stats, titles, reminders settings, quit-challenge progress | Always on device | Yes (your profile) |
 | **Purchases** | Whether VitalsOS Pro (trial, subscription, or lifetime) is active | When you use the paywall or Restore Purchases | Yes |
 
 We **do not** collect: email or phone (the app does not read or store them), precise location, HealthKit or fitness API data, contacts, browsing history, advertising identifiers, or payment card numbers (Apple handles payment).
 
 ## On your device
 
-The app stores data locally on your iPhone or iPad using **SwiftData**, including:
+The app stores data locally on your **iPhone** using **SwiftData**, including:
 
 - Mission completions, time/unit logs, and templates you activate
 - Character progress (XP, level, traits, in-game vitals, rebirth/capstone state)
@@ -42,16 +43,18 @@ The app stores data locally on your iPhone or iPad using **SwiftData**, includin
 - Settings (theme, reminders, equipped titles/effects)
 - Habit-break (quit challenge) progress and login-streak rewards
 
-If you **do not** sign in with Apple or enable iCloud for the app, this data remains on that device unless you use an **Apple device backup** (iCloud or computer backup).
+Progress saves automatically while you play. **Deleting VitalsOS from your iPhone removes this local data** unless you exported a backup first.
 
-## Optional: Sign in with Apple and iCloud sync
+## Backup and moving devices
 
-You can use VitalsOS without signing in. If you choose **Sign in with Apple** and your device has **iCloud** available, app progress is stored in your **private CloudKit container** (`iCloud.mizulab.VitalsOS`) so the same data can appear on your other devices signed into the same Apple ID.
+**Manage → Data & Backup** lets you:
 
-- Sync is handled by **Apple’s iCloud/CloudKit**; we do not operate separate sync servers.
-- We receive a **stable Apple user identifier** to link purchases (via RevenueCat) and your profile — not your Apple ID password.
-- Apple may provide your **name once** on first Sign in with Apple if you allow it and your display name is empty.
-- You can wipe game progress in **Manage** (optionally including iCloud copies when signed in). Sign-in, theme, reminders, and subscription status are not removed by a progress wipe.
+- **Export backup** — creates an encrypted `.vitalsbackup` file you can save to Files, AirDrop, or another app you trust
+- **Import backup** — restores progress from a file you previously exported
+
+Backup files stay under **your control**. We do not upload them to our servers. Subscription status is **not** included in backups — use **Restore Purchases** after import.
+
+You can wipe all game progress in **Manage → Data & Backup → Delete all saved progress** (subscription and app settings remain).
 
 ## VitalsOS Pro (subscriptions)
 
@@ -61,7 +64,7 @@ After onboarding, the app requires an active **VitalsOS Pro** entitlement (free 
 |-------|--------|
 | **Billing** | **Apple App Store** — we never see your payment card |
 | **Plans** | Monthly, yearly (7-day free trial for eligible new subscribers), or one-time lifetime |
-| **RevenueCat** | Used on-device to validate entitlement status and restore purchases. See [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/) |
+| **RevenueCat** | Used on-device to validate entitlement status and restore purchases. RevenueCat may assign an anonymous app user ID for subscription management. See [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/) |
 | **Manage / cancel** | iOS **Settings → Apple ID → Subscriptions**, or the link in the app paywall / **Manage → Subscription** |
 
 ## Permissions
@@ -78,7 +81,7 @@ Denying Photos or Notifications does not block subscription or basic app use aft
 
 | Service | Role | Privacy |
 |---------|------|---------|
-| **Apple** (App Store, Sign in with Apple, iCloud, CloudKit) | Payments, identity, optional sync | [Apple Privacy](https://www.apple.com/legal/privacy/) |
+| **Apple** (App Store) | Payments | [Apple Privacy](https://www.apple.com/legal/privacy/) |
 | **RevenueCat** | Subscription status and restore | [RevenueCat Privacy](https://www.revenuecat.com/privacy/) |
 
 We do not embed social networks, ad networks, or crash/analytics SDKs in the current version.
@@ -89,13 +92,15 @@ If you download VitalsOS from an App Store in the **European Union**, Apple may 
 
 ## Security and retention
 
-- Data in iCloud uses Apple’s encryption and access controls for your Apple ID.
-- We retain habit data only as long as you keep it in the app or your iCloud account; you can delete progress from the app.
-- If you delete the app without wiping progress, local data is removed with the app; iCloud data may remain until you delete it or wipe progress while signed in.
+- Local data uses iOS app sandbox protections.
+- Exported backups are encrypted; keep backup files private like any personal document.
+- We retain habit data only as long as you keep it in the app or in a backup file you control.
+- Deleting the app removes local SwiftData unless you exported a copy first.
 
 ## Your choices
 
-- Use the app without Sign in with Apple (single-device, local data).
+- Use the app without creating any online account.
+- Export a backup before reinstalling or switching devices.
 - Deny optional permissions (Photos, Notifications).
 - Cancel subscriptions in Apple’s subscription settings.
 - Request help or privacy questions via [SUPPORT.md](./SUPPORT.md).

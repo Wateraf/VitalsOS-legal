@@ -53,7 +53,9 @@ You can gain **up to +2 per trait per day** from missions. Extra ticks still cou
 
 ## Vitals
 
-Daily essentials (meals, shower, sleep, water, etc.) refill **Hunger**, **Hygiene**, **Energy**, **Fun**, and **Social**. Keep them up so your character stays in good shape. Vitals decay slowly if you do nothing.
+Daily essentials (meals, shower, sleep, water, etc.) refill **Hunger**, **Hygiene**, **Energy**, **Fun**, **Social**, and **Health**. Keep them up so your character stays in good shape. Vitals decay slowly if you do nothing.
+
+**Sleep tip:** Log sleep when you **wake up**, not at bedtime — you'll know how many hours you slept, and **Energy** refills from that total (about **7 hours** for a full bar).
 
 ---
 
@@ -117,6 +119,12 @@ Pick templates from **Manage → Template Library** that match how you want to t
 ## Character style
 
 **Character → Style** lets you choose **login streak** and **quit challenge** badge effects on your avatar. (Wearable title collection is simplified in early versions.)
+
+---
+
+## Backup (new phone)
+
+**Manage → Data & Backup → Export backup** saves an encrypted copy of your progress. **Import backup** on another iPhone restores it. Subscription is separate — use **Restore Purchases** after import.
 
 ---
 
